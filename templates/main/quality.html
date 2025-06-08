@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Quality Standards - Golden Spices Venture{% endblock %}
+
+{% block content %}
+<!-- Quality Hero Section -->
+<section class="quality-hero py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold mb-4">Our Quality Standards</h1>
+                <p class="lead">We maintain the highest quality standards in every aspect of our turmeric production and export process.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/quality-hero.jpg' %}" alt="Quality Standards" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Control Process -->
+<section class="quality-process py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Quality Control Process</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="process-card text-center p-4">
+                    <i class="fas fa-seedling fa-3x mb-3 text-primary"></i>
+                    <h3>Source Selection</h3>
+                    <p>Careful selection of turmeric from certified organic farms</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="process-card text-center p-4">
+                    <i class="fas fa-microscope fa-3x mb-3 text-primary"></i>
+                    <h3>Laboratory Testing</h3>
+                    <p>Rigorous testing for purity, curcumin content, and contaminants</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="process-card text-center p-4">
+                    <i class="fas fa-certificate fa-3x mb-3 text-primary"></i>
+                    <h3>Certification</h3>
+                    <p>Comprehensive certification process for international standards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Parameters -->
+<section class="quality-parameters py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Quality Parameters</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Standard</th>
+                                <th>Our Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Curcumin Content</td>
+                                <td>Min 5%</td>
+                                <td>6-8%</td>
+                            </tr>
+                            <tr>
+                                <td>Moisture Content</td>
+                                <td>Max 10%</td>
+                                <td>8-9%</td>
+                            </tr>
+                            <tr>
+                                <td>Total Ash</td>
+                                <td>Max 7%</td>
+                                <td>5-6%</td>
+                            </tr>
+                            <tr>
+                                <td>Acid Insoluble Ash</td>
+                                <td>Max 1%</td>
+                                <td>0.5-0.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Volatile Oil</td>
+                                <td>Min 3%</td>
+                                <td>3.5-4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section class="certifications py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Certifications</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="certification-card text-center p-4">
+                    <img src="{% static 'images/cert-1.png' %}" alt="ISO Certification" class="img-fluid mb-3">
+                    <h5>ISO 22000:2018</h5>
+                    <p>Food Safety Management System</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="certification-card text-center p-4">
+                    <img src="{% static 'images/cert-2.png' %}" alt="Organic Certification" class="img-fluid mb-3">
+                    <h5>Organic Certified</h5>
+                    <p>100% Organic Farming Practices</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="certification-card text-center p-4">
+                    <img src="{% static 'images/cert-3.png' %}" alt="HACCP Certification" class="img-fluid mb-3">
+                    <h5>HACCP Certified</h5>
+                    <p>Hazard Analysis Critical Control Point</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Assurance -->
+<section class="quality-assurance py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Quality Assurance</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="assurance-card p-4">
+                    <h4><i class="fas fa-check-circle text-primary me-2"></i>Regular Testing</h4>
+                    <p>Every batch undergoes comprehensive testing in our state-of-the-art laboratory.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="assurance-card p-4">
+                    <h4><i class="fas fa-check-circle text-primary me-2"></i>Traceability</h4>
+                    <p>Complete traceability from farm to final product.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="assurance-card p-4">
+                    <h4><i class="fas fa-check-circle text-primary me-2"></i>Storage Standards</h4>
+                    <p>Controlled storage conditions to maintain product quality.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="assurance-card p-4">
+                    <h4><i class="fas fa-check-circle text-primary me-2"></i>Export Compliance</h4>
+                    <p>Compliance with international export standards and regulations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Experience Our Quality</h2>
+        <p class="lead mb-4">Contact us to learn more about our quality standards and certifications</p>
+        <a href="{% url 'main:contact' %}" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+</section>
+{% endblock %} 

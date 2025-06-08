@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Products - Golden Spices Venture{% endblock %}
+
+{% block content %}
+<!-- Products Hero Section -->
+<section class="products-hero py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold mb-4">Our Premium Products</h1>
+                <p class="lead">Discover our range of high-quality turmeric products, carefully sourced and processed to meet international standards.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'images/products-hero.jpg' %}" alt="Our Products" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Categories -->
+<section class="product-categories py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Product Categories</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="category-card text-center p-4">
+                    <i class="fas fa-seedling fa-3x mb-3 text-primary"></i>
+                    <h3>Raw Turmeric</h3>
+                    <p>Premium quality raw turmeric fingers and powder</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card text-center p-4">
+                    <i class="fas fa-mortar-pestle fa-3x mb-3 text-primary"></i>
+                    <h3>Processed Turmeric</h3>
+                    <p>High-curcumin content processed turmeric products</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card text-center p-4">
+                    <i class="fas fa-certificate fa-3x mb-3 text-primary"></i>
+                    <h3>Organic Turmeric</h3>
+                    <p>Certified organic turmeric products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product List -->
+<section class="product-list py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Products</h2>
+        <div class="row g-4">
+            {% for product in products %}
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Curcumin Content:</strong> {{ product.curcumin_content }}%</li>
+                            <li><strong>Origin:</strong> {{ product.origin }}</li>
+                            <li><strong>Certification:</strong> {{ product.certification }}</li>
+                            {% if product.is_organic %}
+                            <li><span class="badge bg-success">Organic</span></li>
+                            {% endif %}
+                        </ul>
+                        <a href="{% url 'main:contact' %}" class="btn btn-primary">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Product Specifications -->
+<section class="product-specs py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Product Specifications</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Specification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Moisture Content</td>
+                                <td>Max 10%</td>
+                            </tr>
+                            <tr>
+                                <td>Total Ash</td>
+                                <td>Max 7%</td>
+                            </tr>
+                            <tr>
+                                <td>Acid Insoluble Ash</td>
+                                <td>Max 1%</td>
+                            </tr>
+                            <tr>
+                                <td>Volatile Oil</td>
+                                <td>Min 3%</td>
+                            </tr>
+                            <tr>
+                                <td>Curcumin Content</td>
+                                <td>Min 5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packaging Options -->
+<section class="packaging-options py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Packaging Options</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="packaging-card text-center p-4">
+                    <i class="fas fa-box fa-3x mb-3 text-primary"></i>
+                    <h3>Bulk Packaging</h3>
+                    <p>25kg, 50kg, and 100kg bags</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="packaging-card text-center p-4">
+                    <i class="fas fa-box-open fa-3x mb-3 text-primary"></i>
+                    <h3>Retail Packaging</h3>
+                    <p>500g, 1kg, and 5kg packages</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="packaging-card text-center p-4">
+                    <i class="fas fa-shipping-fast fa-3x mb-3 text-primary"></i>
+                    <h3>Custom Packaging</h3>
+                    <p>Customized packaging solutions available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Interested in Our Products?</h2>
+        <p class="lead mb-4">Contact us for detailed product information and pricing</p>
+        <a href="{% url 'main:contact' %}" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+</section>
+{% endblock %} 

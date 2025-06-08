@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+/* Feature Cards */
+.feature-card, .category-card, .value-card, .packaging-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover, .category-card:hover, .value-card:hover, .packaging-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Team Cards */
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Certification Cards */
+.certification-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.certification-card img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Logo Styles */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-brand span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card Images */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Table Styles */
+.table {
+    background: white;
+}
+
+.table-primary {
+    background-color: #e9ecef;
+}
+
+/* Alert Messages */
+.alert {
+    margin-top: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Section Spacing */
+section {
+    padding: 4rem 0;
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Text Colors */
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Quality Page Styles */
+.process-card, .assurance-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-card:hover, .assurance-card:hover {
+    transform: translateY(-5px);
+}
+
+.assurance-card h4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Contact Page Styles */
+.info-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form .form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.contact-form .btn-primary {
+    padding: 0.75rem 2rem;
+}
+
+.map-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.business-hours .table {
+    margin-bottom: 0;
+}
+
+.business-hours .table td {
+    padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .team-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-form .card-body {
+        padding: 2rem !important;
+    }
+
+    .info-card {
+        margin-bottom: 1rem;
+    }
+} 
