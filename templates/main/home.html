@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Home - Golden Spices Venture{% endblock %}
+{% block title %}Home - Golden Spice Venture{% endblock %}
 
 {% block content %}
 <!-- Hero Section -->
@@ -14,7 +14,7 @@
                 <a href="{% url 'main:products' %}" class="btn btn-primary btn-lg">Explore Products</a>
             </div>
             <div class="col-md-6">
-                <img src="{% static 'images/hero-turmeric.jpg' %}" alt="Premium Turmeric" class="img-fluid rounded">
+                <img src="https://media.istockphoto.com/id/1211954287/photo/dried-turmeric-roots-in-ceramic-bowl-isolated-on-white-background-top-view.jpg?s=612x612&w=0&k=20&c=aLAh-tRXpnD2BXr0-egQw1h_56FhrYLZ51C5ZegzsJw=" alt="Premium Turmeric" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -49,55 +49,8 @@
     </div>
 </section>
 
-<!-- Featured Products -->
-<section class="featured-products py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Featured Products</h2>
-        <div class="row g-4">
-            {% for product in featured_products %}
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description|truncatewords:20 }}</p>
-                        <a href="{% url 'main:products' %}" class="btn btn-outline-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
-<!-- Testimonials -->
-<section class="testimonials py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">What Our Clients Say</h2>
-        <div class="row">
-            {% for testimonial in testimonials %}
-            <div class="col-md-4">
-                <div class="testimonial-card p-4">
-                    <div class="rating mb-3">
-                        {% for i in "12345" %}
-                            {% if forloop.counter <= testimonial.rating %}
-                                <i class="fas fa-star text-warning"></i>
-                            {% else %}
-                                <i class="far fa-star text-warning"></i>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                    <p class="testimonial-text">{{ testimonial.content }}</p>
-                    <div class="testimonial-author">
-                        <strong>{{ testimonial.name }}</strong>
-                        <p class="mb-0">{{ testimonial.company }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+
 
 <!-- Call to Action -->
 <section class="cta-section py-5 bg-primary text-white">

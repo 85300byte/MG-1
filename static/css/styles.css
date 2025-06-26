@@ -3,6 +3,75 @@ body {
     padding-top: 76px;
 }
 
+/* Navbar Animations */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-brand span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover span {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 /* Hero Section */
 .hero-section {
     background-color: #f8f9fa;
@@ -49,33 +118,9 @@ body {
 }
 
 .certification-card img {
-    max-height: 100px;
+    max-height: 350px;
+    width: 100%;
     object-fit: contain;
-}
-
-/* Navigation */
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.navbar-brand h1 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-/* Logo Styles */
-.navbar-brand img {
-    transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover img {
-    transform: scale(1.1);
-}
-
-.navbar-brand span {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
 }
 
 /* Footer */

@@ -141,7 +141,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your-email@gmail.com'  # Replace with your email
-EMAIL_HOST_PASSWORD = 'your-app-password'  # Replace with your app password
-DEFAULT_FROM_EMAIL = 'your-email@gmail.com'  # Replace with your email
-ADMIN_EMAIL = 'admin@example.com'  # Replace with admin email
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'goldenspice85@gmail.com'
+EMAIL_HOST_PASSWORD = 'xivq mkuo bkvy wxyz'
+DEFAULT_FROM_EMAIL = 'Golden Spice Venture <goldenspice85@gmail.com>'
+ADMIN_EMAIL = 'goldenspice85@gmail.com'
+SERVER_EMAIL = 'goldenspice85@gmail.com'
+
+# Email timeout settings
+EMAIL_TIMEOUT = 30  # seconds

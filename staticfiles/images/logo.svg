@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Circle background -->
+    <circle cx="150" cy="150" r="100" fill="white" stroke="orange" stroke-width="5" />
+
+    <!-- Turmeric roots (simplified) -->
+    <ellipse cx="130" cy="220" rx="40" ry="15" fill="#d2a64e" />
+    <ellipse cx="170" cy="230" rx="40" ry="15" fill="#d2a64e" />
+    <circle cx="120" cy="220" r="5" fill="#f3c12c" />
+    
+    <!-- Leaves and flowers (symbolic only) -->
+    <path d="M150,50 C120,30 100,90 130,100 C160,110 180,50 150,50" fill="#70a651" />
+    <path d="M170,50 C200,30 220,90 190,100 C160,110 140,50 170,50" fill="#70a651" />
+    <circle cx="140" cy="60" r="10" fill="pink" />
+    <circle cx="160" cy="60" r="10" fill="pink" />
+
+    <!-- Text -->
+    <text x="90" y="150" font-size="20" font-family="Comic Sans MS, cursive, sans-serif" font-weight="bold" fill="orange" stroke="red" stroke-width="1">
+        Golden
+    </text>
+    <text x="90" y="175" font-size="20" font-family="Comic Sans MS, cursive, sans-serif" font-weight="bold" fill="orange" stroke="red" stroke-width="1">
+        Spice
+    </text>
+    <text x="90" y="200" font-size="20" font-family="Comic Sans MS, cursive, sans-serif" font-weight="bold" fill="orange" stroke="red" stroke-width="1">
+        Venture
+    </text>
+</svg> 

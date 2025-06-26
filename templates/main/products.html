@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Products - Golden Spices Venture{% endblock %}
+{% block title %}Products - Golden Spice Venture{% endblock %}
 
 {% block content %}
 <!-- Products Hero Section -->
@@ -13,7 +13,7 @@
                 <p class="lead">Discover our range of high-quality turmeric products, carefully sourced and processed to meet international standards.</p>
             </div>
             <div class="col-md-6">
-                <img src="{% static 'images/products-hero.jpg' %}" alt="Our Products" class="img-fluid rounded">
+                <img src="https://www.organicgyaan.com/cdn/shop/files/Turmeric-Whole.jpg?v=1721395931&width=1214" alt="Our Products" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -49,77 +49,7 @@
     </div>
 </section>
 
-<!-- Product List -->
-<section class="product-list py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Our Products</h2>
-        <div class="row g-4">
-            {% for product in products %}
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description }}</p>
-                        <ul class="list-unstyled">
-                            <li><strong>Curcumin Content:</strong> {{ product.curcumin_content }}%</li>
-                            <li><strong>Origin:</strong> {{ product.origin }}</li>
-                            <li><strong>Certification:</strong> {{ product.certification }}</li>
-                            {% if product.is_organic %}
-                            <li><span class="badge bg-success">Organic</span></li>
-                            {% endif %}
-                        </ul>
-                        <a href="{% url 'main:contact' %}" class="btn btn-primary">Inquire Now</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
-<!-- Product Specifications -->
-<section class="product-specs py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Product Specifications</h2>
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Specification</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Moisture Content</td>
-                                <td>Max 10%</td>
-                            </tr>
-                            <tr>
-                                <td>Total Ash</td>
-                                <td>Max 7%</td>
-                            </tr>
-                            <tr>
-                                <td>Acid Insoluble Ash</td>
-                                <td>Max 1%</td>
-                            </tr>
-                            <tr>
-                                <td>Volatile Oil</td>
-                                <td>Min 3%</td>
-                            </tr>
-                            <tr>
-                                <td>Curcumin Content</td>
-                                <td>Min 5%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Packaging Options -->
 <section class="packaging-options py-5">

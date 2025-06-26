@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Golden Spices Venture{% endblock %}</title>
+    <title>{% block title %}Golden Spice Venture{% endblock %}</title>
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,8 +16,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{% url 'main:home' %}">
-                    <img src="{% static 'images/logo.png' %}" alt="Golden Spices Venture Logo" height="50" class="me-2">
-                    <span class="d-none d-md-inline">Golden Spices Venture</span>
+                    <img src="{% static 'images/logoo.jpeg' %}" alt="Golden Spice Venture Logo" height="50" class="me-2">
+                    <span class="d-none d-md-inline">Golden Spice Venture</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -38,11 +38,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.resolver_match.url_name == 'quality' %}active{% endif %}" 
-                               href="{% url 'main:quality' %}">Quality</a>
+                            href="{% url 'main:quality' %}">Quality</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}" 
-                               href="{% url 'main:contact' %}">Contact</a>
+                            href="{% url 'main:contact' %}">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>Golden Spices Venture</h5>
+                    <h5>Golden Spice Venture</h5>
                     <p>Your trusted partner in premium turmeric exports from India.</p>
                 </div>
                 <div class="col-md-4">
@@ -85,9 +85,9 @@
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Spice Street, Mumbai, India</li>
-                        <li><i class="fas fa-phone me-2"></i>+91 22 1234 5678</li>
-                        <li><i class="fas fa-envelope me-2"></i>info@goldenspicesventure.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Parwana Nagar, Nanded, India</li>
+                        <li><i class="fas fa-phone me-2"></i>+91 9763606444 </li>
+                        <li><i class="fas fa-envelope me-2"></i>goldenspice85@gmail.com</li>
                     </ul>
                     <div class="social-links mt-3">
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
@@ -99,7 +99,7 @@
             </div>
             <hr>
             <div class="text-center">
-                <p class="mb-0">&copy; {% now "Y" %} Golden Spices Venture. All rights reserved.</p>
+                <p class="mb-0">&copy; {% now "Y" %} Golden Spice Venture. All rights reserved.</p>
             </div>
         </div>
     </footer>
