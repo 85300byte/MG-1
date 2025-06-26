@@ -118,7 +118,8 @@ body {
 }
 
 .certification-card img {
-    max-height: 100px;
+    max-height: 350px;
+    width: 100%;
     object-fit: contain;
 }
 
