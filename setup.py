@@ -1,16 +1,7 @@
-from setuptools import setup, find_packages
+import os
+import re
 
-setup(
-    name='golden_spices',
-    version='0.1.0',
-    packages=find_packages(),
-    include_package_data=True,
-    install_requires=open('requirements.txt').read().splitlines(),
-    entry_points={
-        'console_scripts': [
-            'manage = manage:main',
-        ]
-    },
-    description='Django project for Golden Spices',
-    author='Golden Spices',
-)
+def get_version():
+    with open(os.path.join("golden_spices", "__init__.py")) as f:
+        content = f.read()
+    return re.search(r"__version__ = ['\"]([^'\"]+)['\"]", content).group(1)
