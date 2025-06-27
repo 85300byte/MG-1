@@ -7,5 +7,5 @@ setup(
     include_package_data=True,
     install_requires=open('requirements.txt').read().splitlines(),
     description='Django project for Golden Spice Venture',
-    author='Golden Spice Venture',
+    author='golden_spice_venture',
 )
