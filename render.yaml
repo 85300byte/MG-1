@@ -2,7 +2,10 @@ services:
   - type: web
     name: golden-spice-venture
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      apt-get update && apt-get install -y libjpeg-dev zlib1g-dev
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
     startCommand: gunicorn golden_spice_venture.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
@@ -10,7 +13,7 @@ services:
       - key: SECRET_KEY
         value: k17bbwnjokydqy2r+=#i$84xqtq845z#7f%3%=&hdxqe3#tgbd
       - key: DEBUG
-        value: True
+        value: False
       - key: ALLOWED_HOSTS
         value: localhost,127.0.0.1
       # - key: DATABASE_URL
