@@ -6,6 +6,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=open('requirements.txt').read().splitlines(),
-    description='Django project for Golden Spices',
-    author='Golden Spices',
+    description='Django project for Golden Spice Venture',
+    author='Golden Spice Venture',
 )
