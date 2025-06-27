@@ -8,7 +8,7 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: golden_spice_venture.settings
       - key: SECRET_KEY
-        value: your-very-secret-key
+        value: k17bbwnjokydqy2r+=#i$84xqtq845z#7f%3%=&hdxqe3#tgbd
       - key: DEBUG
         value: True
       - key: ALLOWED_HOSTS
