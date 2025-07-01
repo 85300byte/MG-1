@@ -2,10 +2,7 @@ services:
   - type: web
     name: golden-spice-venture
     env: python
-    buildCommand: |
-      apt-get update && apt-get install -y libjpeg-dev zlib1g-dev
-      pip install --upgrade pip setuptools wheel
-      pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn golden_spice_venture.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
