@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages # type: ignore
 
+version = __version__
+
 setup(
     name='golden_spice_venture',
     version='0.1.0',  # Hardcoded!
